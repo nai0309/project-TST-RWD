@@ -1,0 +1,211 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  color: white;
+  font-family: Microsoft JhengHei;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.title-sec {
+  font-size: 20px;
+  text-align: center;
+}
+
+.content {
+  font-size: 15px;
+}
+
+.btn-orgpin {
+  color: white;
+  background-color: #ff5b52;
+}
+.btn-orgpin:hover {
+  color: white;
+  text-shadow: 0 0 8px white;
+}
+
+/* 導覽列 start */
+nav {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(93, 27, 75);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+nav img {
+  max-width: 100%;
+  height: 6vh;
+}
+
+nav ul li {
+  font-size: 14px;
+  list-style: none;
+}
+
+nav ul li a:hover {
+  opacity: 0.8;
+}
+.mobile-menu-btn img {
+  width: 30px;
+}
+
+.mobile-menu {
+  z-index: 999;
+  backdrop-filter: blur(4px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+.mobile-menu-show {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.8;
+  width: 80vw;
+  height: 100vh;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.close-btn {
+  width: 2rem;
+  height: 2rem;
+}
+
+.close-btn:before,
+.close-btn:after {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: rgb(255, 255, 255);
+}
+.close-btn:before {
+  transform: rotate(45deg);
+}
+.close-btn:after {
+  transform: rotate(-45deg);
+}
+
+.mobile-menu-show ul li {
+  list-style: none;
+}
+/* 導覽列 end */
+
+/* 輪播圖 start */
+#carousel_cp_bn {
+  padding-top: 10vh;
+}
+
+#carousel_cp_bn .slick-prev {
+  left: 30px;
+  z-index: 90;
+}
+#carousel_cp_bn .slick-next {
+  right: 30px;
+  z-index: 90;
+}
+
+#carousel_cp_bn img {
+  object-fit: cover;
+}
+
+@media (max-width: 575.98px) {
+  #carousel_cp_bn img {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #carousel_cp_bn img {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #carousel_cp_bn img {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #carousel_cp_bn img {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  #carousel_cp_bn img {
+    height: 90vh;
+  }
+}
+
+/* 輪播圖 end */
+
+/* 主題區塊設定 start */
+#new_song, #share_song ,#greatest_hits_song {
+  height: 100vh;
+  background-repeat: no-repeat;
+  /* padding-top: 10vh; */
+}
+#new_song {
+  background-image: url("../img/new_song/Home_v2_w1920_03.jpg");
+}
+#share_song {
+  background-image: url("../img/share/Home_v2_w1920_04.jpg");
+}
+#greatest_hits_song {
+  background-image: url("../img/greatest_hits/Home_v2_w1920_05.jpg");
+}
+
+#new_song .row, #share_song .row,#greatest_hits_song .row {
+  margin: 0;
+}
+/* 主題區塊設定 end */
+
+/* 歌曲展示start */
+.song-display {
+  width: 85vw;
+}
+
+.song-album {
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 歌曲展示end */
+
+.slick-prev:before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.slick-next:before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}

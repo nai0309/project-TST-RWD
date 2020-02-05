@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+   <!-- fontawesome -->
+   <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- slick.css -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <!-- wow.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- bootstrap.css -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/all.css" />
+    <title>台灣之星TSTAR</title>
+  </head>
+  <body>
+    <!-- 導覽列 start -->
+      <nav>
+        <a class="col-6" href="https://www.tstartel.com/CWS/"
+          ><img
+            src="img/logo/ts-logo.png"
+            alt="台灣之星logo"
+            title="台灣之星logo"
+        /></a>
+        <!-- big device menu start -->
+        <ul class="col-6 row d-none d-md-flex justify-content-around m-0">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">每日好康</a></li>
+          <li><a href="#share_song">熱門排行</a></li>
+          <li><a href="#greatest_hits_song">音樂盒</a></li>
+          <li><a href="#">我的專區</a></li>
+        </ul>
+        <!-- big device menu end -->
+
+        <!-- mobile device menu-btn start -->
+        <div class="col-6 mobile-menu-btn d-flex d-md-none justify-content-end">
+          <img
+            src="data:image/svg+xml;base64,
+      PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBjbGFzcz0iIj48Zz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik01MDEuMzMzLDk2SDEwLjY2N0M0Ljc3OSw5NiwwLDEwMC43NzksMCwxMDYuNjY3czQuNzc5LDEwLjY2NywxMC42NjcsMTAuNjY3aDQ5MC42NjdjNS44ODgsMCwxMC42NjctNC43NzksMTAuNjY3LTEwLjY2NyAgICBTNTA3LjIyMSw5Niw1MDEuMzMzLDk2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTAxLjMzMywyNDUuMzMzSDEwLjY2N0M0Ljc3OSwyNDUuMzMzLDAsMjUwLjExMiwwLDI1NnM0Ljc3OSwxMC42NjcsMTAuNjY3LDEwLjY2N2g0OTAuNjY3ICAgIGM1Ljg4OCwwLDEwLjY2Ny00Ljc3OSwxMC42NjctMTAuNjY3UzUwNy4yMjEsMjQ1LjMzMyw1MDEuMzMzLDI0NS4zMzN6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIiBzdHlsZT0iZmlsbDojRkZGRkZGIj48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik01MDEuMzMzLDM5NC42NjdIMTAuNjY3QzQuNzc5LDM5NC42NjcsMCwzOTkuNDQ1LDAsNDA1LjMzM0MwLDQxMS4yMjEsNC43NzksNDE2LDEwLjY2Nyw0MTZoNDkwLjY2NyAgICBjNS44ODgsMCwxMC42NjctNC43NzksMTAuNjY3LTEwLjY2N0M1MTIsMzk5LjQ0NSw1MDcuMjIxLDM5NC42NjcsNTAxLjMzMywzOTQuNjY3eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiI+PC9wYXRoPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4="
+          />
+        </div>
+        <!-- mobile device menu-btn end -->
+      </nav>
+
+           <!-- mobile device menu-list start -->
+           <div class="mobile-menu d-none">
+            <div class="mobile-menu-show shadow px-4">
+              <div class="close-btn my-2" onclick="mobile_menu_close()"></div>
+      
+              <!-- 熱門排行榜 start -->
+              <div class="row py-4 px-1 border-bottom justify-content-between">
+                <span class="col-auto">熱門排行榜</span>
+                <span class="col-auto" onclick="menu_list('hit')"><i class="fas fa-caret-down"></i></spancla>
+              </div>
+              <div id="hit" class="d-none">
+                <ul class="pt-3">
+                  <li class="pb-5"><a href="">新歌綜合</a></li>
+                  <li class="pb-5"><a href="">國語流行</a></li>
+                  <li class="pb-5"><a href="">西洋金碟</a></li>
+                  <li class="pb-5"><a href="">東洋發燒</a></li>
+                  <li><a href="">台語流行</a></li>
+                </ul>
+              </div>
+              <!-- 熱門排行榜 end -->
+      
+              <!-- 每日好康 start -->
+              <div class="row py-4 px-1 border-bottom justify-content-between">
+                <span class="col-auto">每日好康</span>
+                <span class="col-auto" onclick="menu_list('goodies')"><i class="fas fa-caret-down"></i></spancla>
+              </div>
+              <div id="goodies" class="d-none">
+                <ul class="pt-3">
+                  <li class="pb-5"><a href="">新歌綜合</a></li>
+                  <li class="pb-5"><a href="">國語流行</a></li>
+                  <li class="pb-5"><a href="">西洋金碟</a></li>
+                  <li class="pb-5"><a href="">東洋發燒</a></li>
+                  <li><a href="">台語流行</a></li>
+                </ul>
+              </div>
+              <!-- 每日好康 end -->
+      
+              <!-- 精選音樂盒 start -->
+              <div class="row py-4 px-1 border-bottom justify-content-between">
+                <span class="col-auto">精選音樂盒</span>
+                <span class="col-auto" onclick="menu_list('musicBox')"><i class="fas fa-caret-down"></i></spancla>
+              </div>
+              <div id="musicBox" class="d-none">
+                <ul class="pt-3">
+                  <li class="pb-5"><a href="">新歌綜合</a></li>
+                  <li class="pb-5"><a href="">國語流行</a></li>
+                  <li class="pb-5"><a href="">西洋金碟</a></li>
+                  <li class="pb-5"><a href="">東洋發燒</a></li>
+                  <li><a href="">台語流行</a></li>
+                </ul>
+              </div>
+              <!-- 精選音樂盒 end -->
+            </div>
+          </div>
+        <!-- mobile device menu-list end -->
+      
+
+    <!-- 導覽列 end -->
+
+    <!-- 活動輪播bn start -->
+    <section id="carousel_cp_bn">
+      <div class="slideBn">
+        <img
+          class="img-fluid"
+          src="img/carousel/每日好康_01(第一張).jpg"
+          class="d-block"
+          alt="每日好康_01"
+          title="抽雷鬼隨身音響"
+        />
+        <img
+          class="img-fluid"
+          src="img/carousel/每日好康_02.jpg"
+          class="d-block"
+          alt="每日好康_02"
+          title="下載抽英國精油居室噴霧"
+        />
+        <img
+          class="img-fluid"
+          src="img/carousel/每日好康_03.jpg"
+          class="d-block"
+          alt="每日好康_03"
+          title="下載抽Outer Space口罩"
+        />
+        <img
+          class="img-fluid"
+          src="img/carousel/每日好康_04.jpg"
+          class="d-block"
+          alt="每日好康_04"
+          title="老生娛樂再生自己"
+        />
+      </div>
+    </section>
+    <!-- 活動輪播bn end -->
+
+    <!-- 新進歌曲start -->
+    <section id="new_song">
+      <div
+        class="h-100 row flex-column align-items-center justify-content-center"
+      >
+        <div class="col-auto title">新進歌曲</div>
+        <div class="col-auto title-sec">給走在尖端的你！最新的歌曲就在這~</div>
+        <div class="col-auto my-5 flex-nowrap song-display">
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/01(第一張).JPG"
+                alt="新進歌曲01"
+                title="歌曲名稱01"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/02.JPG"
+                alt="新進歌曲02"
+                title="歌曲名稱02"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/03.JPG"
+                alt="新進歌曲03"
+                title="歌曲名稱03"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/04.png"
+                alt="新進歌曲04"
+                title="歌曲名稱04"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/05.JPG"
+                alt="新進歌曲05"
+                title="歌曲名稱05"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/06.JPG"
+                alt="新進歌曲06"
+                title="歌曲名稱06"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+        </div>
+        <div
+          class="col-auto btn btn-orgpin rounded-pill px-4 text-center shadow-lg"
+        >
+          聽更多好歌
+        </div>
+      </div>
+    </section>
+    <!-- 新進歌曲end -->
+
+    <!-- 本周最多人分享start -->
+    <section id="share_song">
+      <div
+        class="h-100 row flex-column align-items-center justify-content-center"
+      >
+        <div class="col-auto title">本周最多人分享</div>
+        <div class="col-auto title-sec">想知道現在的流行趨勢嗎？千萬別錯過最多人分享的歌曲！</div>
+        <div class="col-auto my-5 flex-nowrap song-display">
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/01(第一張).JPG"
+                alt="新進歌曲01"
+                title="歌曲名稱01"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/02.JPG"
+                alt="新進歌曲02"
+                title="歌曲名稱02"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/03.JPG"
+                alt="新進歌曲03"
+                title="歌曲名稱03"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/04.png"
+                alt="新進歌曲04"
+                title="歌曲名稱04"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/05.JPG"
+                alt="新進歌曲05"
+                title="歌曲名稱05"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+
+          <!-- 單一音樂區塊 start -->
+          <div class="row position-relative">
+            <div class="col-auto d-flex align-items-center">
+              <img
+                class="img-fluid song-bg"
+                src="img/new_song/黑色底塊.png"
+                alt="黑色底塊"
+              />
+              <img
+                class="img-fluid song-album"
+                src="img/new_song/06.JPG"
+                alt="新進歌曲06"
+                title="歌曲名稱06"
+              />
+            </div>
+            <div class="col-auto text-center content m-1">
+              <span>句號<br />鄧紫棋</span>
+            </div>
+          </div>
+          <!-- 單一音樂區塊 end -->
+        </div>
+        <div
+          class="col-auto btn btn-orgpin rounded-pill px-4 text-center shadow-lg"
+        >
+          聽更多好歌
+        </div>
+      </div>
+    </section>
+    <!-- 本周最多人分享end -->
+
+    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- wow.js -->
+    <script src="js/wow.min.js"></script>
+    <!-- slick.js -->
+    <script src="js/slick.js"></script>
+    <!-- custom_slide.js -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
