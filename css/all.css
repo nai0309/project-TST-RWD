@@ -72,6 +72,7 @@ nav ul li a:hover {
 .mobile-menu {
   z-index: 999;
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   position: absolute;
   top: 0;
   left: 0;
@@ -91,18 +92,18 @@ nav ul li a:hover {
 }
 
 .close-btn {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .close-btn:before,
 .close-btn:after {
   position: absolute;
-  top: 15px;
-  right: 30px;
+  top: 20px;
+  right: 35px;
   content: " ";
   height: 33px;
-  width: 2px;
+  width: 3px;
   background-color: rgb(255, 255, 255);
 }
 .close-btn:before {
