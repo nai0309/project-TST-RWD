@@ -62,7 +62,7 @@ nav img {
 .hoverEffect{
   position: absolute;
   top: 50%; 
-  left: 75%;
+  left: 70%;
   transform: translate(-50%,-50%);
   list-style: none;
 }
@@ -71,7 +71,7 @@ nav img {
   position: relative;
   font-size: 14px;
   display: inline-block;
-  padding: 0px 10px;
+  padding: 0px;
   color: #fff;
 }
 
